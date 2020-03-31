@@ -11,6 +11,6 @@ let appData = {
 let out = prompt('Введите обязательную статью расходов в этом месяце?', '');
 let sum = prompt('Во сколько обойдется?', '');
 
-appData.expenses.out = sum;
+appData.expenses[out] = sum;
 console.log(appData);
-console.log(appData.expenses.out);
+alert(money/30);
