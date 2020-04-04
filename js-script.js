@@ -12,11 +12,18 @@ let appData = {
 for (let i=0; i<1; i++){
     let out = prompt('Введите обязательную статью расходов в этом месяце?', '');
     let sum = prompt('Во сколько обойдется?', '');
-    if (typeof (out) ==='string' && typeof (out) !=null && typeof (sum) !=null
-        && out !=='' && sum !=='' && out.length <5 && sum.length <5) {appData.expenses[out] = sum;break}
+    if ((typeof (out)) ==='string' && (typeof (out)) != null && (typeof (sum))  !=null
+        && out !=='' && sum !=='' && out.length <5 && sum.length <5) {
+        appData.expenses[out] = sum;break
+    }
 
-    else {continue}
+    else {let out = prompt('Введите обязательную статью расходов в этом месяце?', '');
+        let sum = prompt('Во сколько обойдется?', '');}
 }
+
+// var arr = [2, 3, 4, 6, 1, 5, 3, 1];
+// console.log(arr.filter(function(value, index, self) {
+//     return self.indexOf(value) === index;}));
 
 appData.moneyDay= appData.budget/30;
 
