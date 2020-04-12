@@ -28,4 +28,10 @@ for (let i=0; i<1; i++){
 appData.moneyDay= appData.budget/30;
 
 console.log(appData);
-alert(appData.moneyDay);
+alert('Budget per day: ' + appData.moneyDay);
+if (appData.moneyDay<100){
+    console.log('Minimum')}
+else if (appData.moneyDay> 100 && appData.moneyDay<2000){
+    console.log('GOOD')}
+else if (appData.moneyDay>2000){console.log('EXELLENT')}
+else {console.log('error')}
