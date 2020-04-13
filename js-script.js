@@ -69,12 +69,14 @@ let appData = {
                 appData.income.sort();
             } else { j= j - 1}
         }
-            appData.income.forEach((item)=>alert("Способы доп. заработка: " + item));
+            appData.income.forEach((item, index)=> {if(index>0){
+                alert("Способы доп. заработка: " + item)
+            } });
     }
 };
+// appData.chooseIncome();
 
-// appData.chooseExp();
-// appData.detectDayBudget();
-// appData.detectLevel();
-// appData.chooseOptExpenses();
-appData.chooseIncome();
+for (let keys in appData) {
+    alert("Наша программа включает в себя данные: " + keys)
+}
+
