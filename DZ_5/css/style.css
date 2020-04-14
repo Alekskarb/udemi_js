@@ -11,6 +11,14 @@ body {
     padding-top: 180px;
     font-family: "Cuprum"
 }
+body2 {
+    height: 670px;
+    background: url(../img/apple_true.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 180px;
+    font-family: "Cuprum"
+}
 header {
     position: fixed;
     top:0;
