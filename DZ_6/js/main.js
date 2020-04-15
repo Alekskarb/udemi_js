@@ -2,11 +2,18 @@ let startBtn = document.querySelector('#start');
 
 let blocks = document.querySelectorAll('.result-table div');
 let inputs = document.querySelectorAll('.expenses-item');
+
 let inputsOpt = document.querySelectorAll('.optionalexpenses-item');
 let buttonArray = document.getElementsByTagName('button');
 let apply = buttonArray[1];
 let calc = buttonArray[2];
-
+let maybe = document.querySelector('#income');
+let chooseSum = document.querySelector('#sum');
+let checkSavings = document.querySelector('#savings');
+let percent = document.querySelector('#percent');
+let year = document.querySelector('.year-value');
+let month = document.querySelector('.month-value');
+let day = document.querySelector('.day-value');
 
 
 let news =[];
@@ -14,7 +21,7 @@ let news =[];
         if (ind % 2 === 1) {
             news.push(item)
         }});
-console.log(inputsOpt);
+console.log(maybe,chooseSum,checkSavings,percent,year,month,day);
 
 // let liFive = document.createElement('li')
 // liFive.classList.add("menu-item");
